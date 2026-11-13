@@ -23,6 +23,8 @@
 
     <main>
         <section>
+            <h2>Registro de rescates</h2>
+          <article>
             <h2>Formulario de reporte</h2>
 
             <form>
@@ -30,7 +32,12 @@
                 <p>
                     <label for="nombre">Nombre del reportante:</label>
                     <input type="text" id="nombre" name="nombre" required>
-                </p>
+                </p> 
+                
+                <p>
+                    <label for="titulo">Título del caso o nombre provisional del animal:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                </p>    
 
                 <p>
                     <label for="telefono">Número de contacto:</label>
@@ -38,13 +45,12 @@
                 </p>
 
                 <p>
-                    <label for="animal">Tipo de animal:</label>
+                    <label for="animal">Categoría del animal:</label>
                     <select id="animal" name="animal" required>
-                        <option value="">Seleccione una opción</option>
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                        <option value="fauna-silvestre">Fauna silvestre</option>
-                        <option value="otro">Otro</option>
+                       <option value="">Seleccione una categoría</option>
+                       <option value="perros">Perros</option>
+                       <option value="gatos">Gatos</option>
+                       <option value="fauna-silvestre">Fauna Silvestre</option>
                     </select>
                 </p>
 
@@ -74,6 +80,7 @@
                 <button type="submit">Enviar reporte</button>
 
             </form>
+          </article>
         </section>
     </main>
 
