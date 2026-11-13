@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar un Animal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Reporte de Animal Rescatado</h1>
+        <p>Registra la información del animal que necesita ayuda.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar un animal</a></li>
+            <li><a href="rescates.html">Casos de rescate</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Formulario de reporte</h2>
+
+            <form>
+
+                <p>
+                    <label for="nombre">Nombre del reportante:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Número de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </p>
+
+                <p>
+                    <label for="animal">Tipo de animal:</label>
+                    <select id="animal" name="animal" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="fauna-silvestre">Fauna silvestre</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="ubicacion">Ubicación del animal:</label>
+                    <input type="text" id="ubicacion" name="ubicacion" required>
+                </p>
+
+                <fieldset>
+                    <legend>Nivel de urgencia:</legend>
+
+                    <input type="radio" id="baja" name="urgencia" value="baja" required>
+                    <label for="baja">Baja</label>
+
+                    <input type="radio" id="media" name="urgencia" value="media">
+                    <label for="media">Media</label>
+
+                    <input type="radio" id="alta" name="urgencia" value="alta">
+                    <label for="alta">Alta</label>
+                </fieldset>
+
+                <p>
+                    <label for="descripcion">Descripción del caso:</label>
+                    <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+                </p>
+
+                <button type="submit">Enviar reporte</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sistema de Control de Rescate y Adopción Animal</p>
+    </footer>
+
+</body>
+</html>
